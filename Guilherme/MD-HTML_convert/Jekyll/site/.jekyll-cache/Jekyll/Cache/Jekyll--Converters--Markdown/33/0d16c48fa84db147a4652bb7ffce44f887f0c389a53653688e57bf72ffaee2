@@ -1,0 +1,74 @@
+I"Z
+<h1 id="contrato">Contrato</h1>
+
+<p>O tipo Contrato possui diversas propriedades que representam as informações básicas que compõe um contrato administrativo. A seguir estão os nomes das propriedades definidas do tipo:</p>
+
+<ul>
+  <li>
+    <p><strong>contractID</strong></p>
+
+    <p>Description: Campo texto contendo o código de identificação do contrato.</p>
+
+    <p>Expected Type: number/integer</p>
+  </li>
+  <li>
+    <p><strong>contractorName</strong></p>
+
+    <p>Description: Campo texto contendo o nome do contratado.</p>
+
+    <p>Expected Type: text/string</p>
+  </li>
+  <li>
+    <p><strong>object</strong></p>
+
+    <p>Description: Campo referente à descrição do objeto do contrato.</p>
+
+    <p>Expected Type: text/string</p>
+  </li>
+  <li>
+    <p><strong>managementUnitID</strong></p>
+
+    <p>Description: Campo numérico contendo o código da unidade gestora do setor interessado.</p>
+
+    <p>Expected Type: number/integer</p>
+  </li>
+  <li>
+    <p><strong>managementUnitName</strong></p>
+
+    <p>Description: Campo texto contendo o nome da unidade gestora do setor interessado.</p>
+
+    <p>Expected Type: text/string</p>
+  </li>
+  <li>
+    <p><strong>publicationDate</strong></p>
+
+    <p>Description: Data referente à publicação do extrato de contrato.</p>
+
+    <p>Expected Type: date</p>
+  </li>
+  <li>
+    <p><strong>validityDate</strong></p>
+
+    <p>Description:  Prazo/Data de vigência do contrato.</p>
+
+    <p>Expected Type: date</p>
+  </li>
+  <li>
+    <p><strong>nationalIdentificationNumber</strong></p>
+
+    <p>Description: Campo numérico contendo o CPF do contratado.</p>
+
+    <p>Expected Type: number/integer</p>
+  </li>
+  <li>
+    <p><strong>companyIdentificationNumber</strong></p>
+
+    <p>Description: Campo numérico contendo o CNPJ do contratado.</p>
+
+    <p>Expected Type: number/integer</p>
+  </li>
+</ul>
+
+<h2 id="exemplos">Exemplos</h2>
+
+:ET
