@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/etc.css">
+    <link rel="stylesheet" href="/assets/css/etcmain.css">
+    <link rel="stylesheet" href="\assets\css\bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <span class="navbar-toggler-icon" onclick="openNav()"></span>
+            <a class="navbar-brand logo-image"><img src="/images/image.png" alt="alternative" width="60">Unipt.org</a> 
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll text-list" href="#header">Documentação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll text-list" href="#intro">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll text-list" href="#features">Esquemas</a>
+                </li>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <div class="component">
+                <div class="header">
+                    <form class="navbar-form d-flex justify-content-center">
+                        <input class="navbar-input"  type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-dark" type="submit" ><img src="/images/lupa.png" alt="alternative" width="15" height="15" ></button> 
+                    </form>
+                </div>
+                <div class="content" id="scroll">
+                    <div class="empty-text">
+                        <ol>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Receita </a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Receita Orçamentária</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href = "/">Receita Extraorçamentária</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Despesas</a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Despesa Orçamentária</a>
+                                    </li>
+                                    <li>
+                                        <a class="nav-link" href = "/">Despesa Extraorçamentária</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Contratos</a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Contratos</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Instrumento</a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Instrumento de Planejamento</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Procedimentos </a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Procedimentos Licitatórios</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Covênios</a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Covênios</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href = "/">Informação</a>
+                                <ol class="submenu collapse ">
+                                    <li>
+                                        <a class="nav-link" href = "/">Informação</a>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                    <ul class="items list"></ul>
+                </div>
+            </div>
+        </aside>
+        <article class="idk">  
+            <div class="container">
+              
+<h1 id="contrato">Contrato</h1>
+
+<p class="test">O tipo Contrato possui diversas propriedades que representam as informações básicas que compõe um contrato administrativo. A seguir estão os nomes das propriedades definidas do tipo:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>PROPERTY</th>
+      <th>EXPECTED TYPE</th>
+      <th>DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>managementUnitName</td>
+      <td>text/string</td>
+      <td>Campo texto contendo o nome da unidade gestora do setor interessado</td>
+    </tr>
+    <tr>
+      <td>managementUnitID</td>
+      <td>number/integer</td>
+      <td>Campo numérico contendo o código da unidade gestora do setor interessado</td>
+    </tr>
+    <tr>
+      <td>contractorName</td>
+      <td>text/string</td>
+      <td>Campo texto contendo o nome do contratado</td>
+    </tr>
+    <tr>
+      <td>nationalIdentificationNumber</td>
+      <td>number/integer</td>
+      <td>Campo numérico contendo o CPF do contratado</td>
+    </tr>
+    <tr>
+      <td>companyIdentificationNumber</td>
+      <td>number/integer</td>
+      <td>Campo numérico contendo o CNPJ do contratado</td>
+    </tr>
+    <tr>
+      <td>publicationDate</td>
+      <td>date</td>
+      <td>Data referente à publicação do extrato de contrato</td>
+    </tr>
+    <tr>
+      <td>validityDate</td>
+      <td>date</td>
+      <td>Prazo/Data de vigência do contrato</td>
+    </tr>
+    <tr>
+      <td>object</td>
+      <td>text/string</td>
+      <td>Campo referente à descrição do objeto do contrato</td>
+    </tr>
+    <tr>
+      <td>contractID</td>
+      <td>number/integer</td>
+      <td>Campo texto contendo o código de identificação do contrato</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+        </article>
+    </main>
+    <footer></footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+        document.querySelectorAll('.sidebar .nav-link').forEach(function(element){
+              
+            element.addEventListener('click', function (e) {
+            let nextEl = element.nextElementSibling;
+            let parentEl  = element.parentElement;	
+
+                if(nextEl) {
+                    e.preventDefault();	
+                    let mycollapse = new bootstrap.Collapse(nextEl);
+                         
+                    if(nextEl.classList.contains('show')){
+                        mycollapse.hide();
+                    } else {
+                        console.log("aqui");
+                        mycollapse.show();
+                    }
+                }
+            }); // addEventListener
+        }) // forEach
+        }); 
+    </script>
+</body>
+</html>
