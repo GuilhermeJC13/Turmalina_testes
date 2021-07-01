@@ -88,6 +88,12 @@ header, footer {
     border-bottom: 1px solid #e3e8ec; 
 }
 
+.test{
+    color: blue;
+    font:100;
+    background-color: black;
+}
+
 .navbar{
     width: 100%;
     justify-content: left!important;

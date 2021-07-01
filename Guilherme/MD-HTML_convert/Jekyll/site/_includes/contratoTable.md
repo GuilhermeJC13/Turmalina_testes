@@ -1,8 +1,9 @@
 
-
 # Contrato
 
 O tipo Contrato possui diversas propriedades que representam as informações básicas que compõe um contrato administrativo. A seguir estão os nomes das propriedades definidas do tipo:
+{: class="test"}
+
 
 | PROPERTY | EXPECTED TYPE | DESCRIPTION |
 | ------ | ------ | ------ |
