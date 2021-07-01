@@ -13,3 +13,4 @@ O tipo Contrato possui diversas propriedades que representam as informações b�
 | validityDate | date | Prazo/Data de vigência do contrato |
 | object | text/string | Campo referente à descrição do objeto do contrato |
 | contractID | number/integer | Campo texto contendo o código de identificação do contrato |
+
