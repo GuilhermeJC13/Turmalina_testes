@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 if(nextEl.classList.contains('show')){
                     mycollapse.hide();
                 } else {
-                    console.log("aqui");
                     mycollapse.show();
                 }
             }

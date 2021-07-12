@@ -1,53 +1,53 @@
 const proprietys = [
     {
         Name: "receita orçamentária",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
     {
         Name: "receita extra orçamentária",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
 
     {
         Name: "despesa orçamentária",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
     {
         Name: "despesa extra orçamentária",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
     {
         Name: "empenho",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
     {
         Name: "documento de pagamento",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
 
     {
         Name: "contrato",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
 
     {
         Name: "instrumento de planejamento",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
 
     {
         Name: "procedimento licitatório",
-        Url: "/Guilherme/Site/pages/Bidding/bidding.html"
+        Url: "../pages/bidding.html"
     },
 
     {
         Name: "convênio",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     },
 
     {
         Name: "informação",
-        Url: "/Guilherme/Site/pages/Contract/contract.html"
+        Url: "../pages/contract.html"
     }
 ];
 
