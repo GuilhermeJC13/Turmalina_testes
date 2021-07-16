@@ -5,8 +5,30 @@
 
 }
 
-@media screen and (max-width: 1024px){
-    .idk{
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+    .components{
+        width:50%!important;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px){
+    .components{
         width:60%!important;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 900px){
+    .components{
+        margin-left: 0%!important;
+        width:100%!important;
+    }
+    .sidebar{
+        width: 100%!important;
+    }
+}
+
+@media screen and (min-width: 729px){
+    .navbar-toggler-icon{
+        display: none!important;
     }
 }
