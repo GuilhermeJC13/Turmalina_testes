@@ -64,10 +64,6 @@ main {
     margin-bottom: calc(var(--space-md) * -1);
 }
 
-main > * {
-    margin-bottom: var(--space-md);
-}
-
 h2 {
     font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 600;
@@ -124,12 +120,8 @@ header, footer {
 }
  
 .component .content {
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: auto;
-}
-
-.sidebar .component {
-    max-height: calc(100vh - var(--offset) * 2);
 }
 
 .component {
@@ -246,7 +238,6 @@ article > * + * {
 
 .components {
     margin-left: var(--space);
-    width: 70%;
 }
 
 .components div {
