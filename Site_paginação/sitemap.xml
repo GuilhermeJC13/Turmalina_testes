@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/index.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/budgetRevenue.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/extraBudgetRevenue.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/budgetExpenditure.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/extraBudgetExpenditure.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/comittedExpenditure.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/paymentDocument.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/contract.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/bidding.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://turmalina-testes-theta.vercel.app/employeeInformation.html</loc>
+  <lastmod>2021-07-28T18:22:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
