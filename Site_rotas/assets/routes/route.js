@@ -53,11 +53,6 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'EmployeeInformationCtrl',
     })
 
-    .when('/sitemap.xml', {
-        templateUrl: 'views/employeeInformation.html',
-        controller: 'EmployeeInformationCtrl',
-    })
-
-    //.otherwise({ redirectTo: '/' });
+    .otherwise({ redirectTo: '/' });
 
 });
