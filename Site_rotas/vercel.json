@@ -4,7 +4,7 @@
         "source": "/(?!sitemap\/.*).*/", "destination": "/"
       },
       {
-        "source": "/sitemap", "destination": "https://turmalina.vercel.app/sitemap.xml"
+        "source": "/sitemap", "destination": "/sitemap.xml"
       }
     ]
   }
