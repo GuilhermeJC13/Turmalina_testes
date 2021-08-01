@@ -58,6 +58,6 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'EmployeeInformationCtrl',
     })
 
-    .otherwise({ redirectTo: '/' });
+    //.otherwise({ redirectTo: '/' });
 
 });
