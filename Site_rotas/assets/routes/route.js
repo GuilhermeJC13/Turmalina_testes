@@ -1,4 +1,3 @@
-import { Sitemap } from "../sitemap.xml"
 app.config(function($routeProvider, $locationProvider) {
 
     //$locationProvider.hashPrefix('');
@@ -54,9 +53,6 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'EmployeeInformationCtrl',
     })
 
-    .when('/sitemap', {
-        templateUrl: Sitemap
-    })
     .otherwise({ redirectTo: '/' });
 
 });
