@@ -53,6 +53,16 @@ app.config(function($routeProvider, $locationProvider) {
         controller: 'EmployeeInformationCtrl',
     })
 
+    .when('/agreement', {
+        templateUrl: "views/agreement.html",
+        controller: 'HomeCtrl',
+    })
+
+    .when('/planningInstrument', {
+        templateUrl: "views/planningInstrument.html",
+        controller: 'HomeCtrl',
+    })
+
     .otherwise({ redirectTo: '/' });
 
 });
