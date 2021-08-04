@@ -1,48 +1,63 @@
 const proprietys = [
     {
-        Name: "receita orçamentária",
-        Url: "#/contract"
+        Type: "receita orçamentária",
+        Name: "receita orçamentária budgetRevenue managementUnitName managementUnitID economicCategory revenueSource revenueSpecie revenueRubric revenueParagraph revenueSubparagraph predictedAmount collectionAmount revenueEntryAmount",
+        Url: "/budgetRevenue"
     },
     {
-        Name: "despesa orçamentária",
-        Url: "#/contract"
+        Type: "receita extra orçamentária",
+        Name: "receita extra orçamentária extraBudgetRevenue realizedAmount extraBudgetRevenueID",
+        Url: "/extraBudgetRevenue"
     },
     {
-        Name: "despesa extra orçamentária",
-        Url: "#/contract"
+        Type: "despesa orçamentária",
+        Name: "despesa orçamentária budgetExpenditure managementUnitName managementUnitID function subfunction program action economicCategory source modality element subelement fixedAmount settledAmount paymentAmount identificationNumber bidModality bidID contractID comittedExpenditureID comittedExpenditureObject comittedExpenditureDate paymentInstallmentDate",
+        Url: "/budgetExpenditure"
     },
     {
-        Name: "empenho",
-        Url: "#/contract"
+        Type: "despesa extra orçamentária",
+        Name: "despesa extra orçamentária extraBudgetExpenditure realizedAmount extraBudgetRevenueID",
+        Url: "/extraBudgetExpenditure"
     },
     {
-        Name: "documento de pagamento",
-        Url: "#/contract"
+        Type: "empenho",
+        Name: "empenho comittedExpenditure budgetaryUnitName budgetaryUnitID identificationNumber creditorName comittedExpenditureHistory",
+        Url: "/comittedExpenditure"
     },
-
     {
-        Name: "contrato",
-        Url: "#/contract"
-    },
-
-    {
-        Name: "instrumento de planejamento",
-        Url: "#/contract"
-    },
-
-    {
-        Name: "procedimento licitatório",
-        Url: "#/bidding"
+        Type: "documento de pagamento",
+        Name: "documento de pagamento paymentDocument managementUnitName managementUnitID bankOperationID bankAccountNumber paymentDate identificationNumber creditorName paymentAmount fundingSource paymentHistory",
+        Url: "/paymentDocument"
     },
 
     {
-        Name: "convênio",
-        Url: "#/contract"
+        Type: "contrato",
+        Name: "contrato contract managementUnitName managementUnitID contractorName identificationNumber publicationDate validityDate contractAmount object contractID",
+        Url: "/contract"
     },
 
     {
-        Name: "informação",
-        Url: "#/contract"
+        Type: "instrumento de planejamento",
+        Name: "instrumento de planejamento planningInstrument multiyearPlan budgetGuidelinesLaw",
+        Url: "/planningInstrument"
+    },
+
+    {
+        Type: "procedimento licitatório",
+        Name: "procedimento licitatório bidding managementUnitName managementUnitID bidID bidModality object publicationDate realizationDate bidderName identificationNumber bidderProposalAmount",
+        Url: "/bidding"
+    },
+
+    {
+        Type: "convênio",
+        Name: "convênio agreement agreementID grantorName contractorName celebrationDate publicationDate validityDate object agreementAmount counterpartAmount",
+        Url: "/agreement"
+    },
+
+    {
+        Type: "Pessoal",
+        Name: "Pessoal employeeInformation employeeName identificationNumber employmentContractType employeePosition employeeSalary",
+        Url: "/employeeInformation"
     }
 ];
 
@@ -60,9 +75,13 @@ names.addEventListener("keyup", function(event) {
 
     // Filtramos a lista de filmes com base no texto digitado:
     const matchs = proprietys.filter(value => {
+
+        var n = names.value
+
+        var x = value.Name
     
         // Se o texto digitado for encontrado no título, retorna o registro:
-        return value.Name.indexOf(names.value) !== -1;
+        return x.toLowerCase().indexOf(n.toLowerCase()) !== -1;
     
     });
         
@@ -73,7 +92,7 @@ names.addEventListener("keyup", function(event) {
 
     for (let propriety of matchs) {
         if(names.value != "" && matchs.length > 0){
-            list.innerHTML += "<div class = 'search-bar' ><a href='"+propriety.Url+"'>"+propriety.Name+"</a></div>";
+            list.innerHTML += "<div class = 'search-bar' ><a href='"+propriety.Url+"'>"+propriety.Type+"</a></div>";
             list.style.display = "inline-block";
             nav.style.display = "none";
         }
