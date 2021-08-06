@@ -33,3 +33,7 @@ app.controller('PaymentDocumentCtrl', function($scope) {
 app.controller('EmployeeInformationCtrl', function($scope) {
     $scope.title = 'Informação';
 });
+
+app.controller('TutorialCtrl', function($scope) {
+    $scope.title = 'Tutorial';
+});

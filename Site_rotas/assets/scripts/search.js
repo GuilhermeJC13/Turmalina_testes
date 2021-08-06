@@ -58,6 +58,12 @@ const proprietys = [
         Type: "Pessoal",
         Name: "Pessoal employeeInformation employeeName identificationNumber employmentContractType employeePosition employeeSalary",
         Url: "/employeeInformation"
+    },
+
+    {
+        Type: "tutorial",
+        Name: "tutorial começar starting",
+        Url: "/tutorial"
     }
 ];
 

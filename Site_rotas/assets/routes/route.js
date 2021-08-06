@@ -62,6 +62,11 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: "views/planningInstrument.html",
         controller: 'HomeCtrl',
     })
+    
+    .when('/tutorial', {
+        templateUrl: "views/tutorial.html",
+        controller: 'TutorialCtrl',
+    })
 
     .otherwise({ redirectTo: '/' });
 
