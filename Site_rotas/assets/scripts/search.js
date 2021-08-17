@@ -1,56 +1,56 @@
 const proprietys = [
     {
-        Type: "receita orçamentária",
+        Type: "Receita Orçamentária",
         Name: "receita orçamentária budgetRevenue managementUnitName managementUnitID economicCategory revenueSource revenueSpecie revenueRubric revenueParagraph revenueSubparagraph predictedAmount collectionAmount revenueEntryAmount",
         Url: "/budgetRevenue"
     },
     {
-        Type: "receita extra orçamentária",
+        Type: "Receita Extraorçamentária",
         Name: "receita extra orçamentária extraBudgetRevenue realizedAmount extraBudgetRevenueID",
         Url: "/extraBudgetRevenue"
     },
     {
-        Type: "despesa orçamentária",
+        Type: "Despesa Orçamentária",
         Name: "despesa orçamentária budgetExpenditure managementUnitName managementUnitID function subfunction program action economicCategory source modality element subelement fixedAmount settledAmount paymentAmount identificationNumber bidModality bidID contractID comittedExpenditureID comittedExpenditureObject comittedExpenditureDate paymentInstallmentDate",
         Url: "/budgetExpenditure"
     },
     {
-        Type: "despesa extra orçamentária",
+        Type: "Despesa Extraorçamentária",
         Name: "despesa extra orçamentária extraBudgetExpenditure realizedAmount extraBudgetRevenueID",
         Url: "/extraBudgetExpenditure"
     },
     {
-        Type: "empenho",
+        Type: "Empenho",
         Name: "empenho comittedExpenditure budgetaryUnitName budgetaryUnitID identificationNumber creditorName comittedExpenditureHistory",
         Url: "/comittedExpenditure"
     },
     {
-        Type: "documento de pagamento",
+        Type: "Documento de Pagamento",
         Name: "documento de pagamento paymentDocument managementUnitName managementUnitID bankOperationID bankAccountNumber paymentDate identificationNumber creditorName paymentAmount fundingSource paymentHistory",
         Url: "/paymentDocument"
     },
 
     {
-        Type: "contrato",
+        Type: "Contratos",
         Name: "contrato contract managementUnitName managementUnitID contractorName identificationNumber publicationDate validityDate contractAmount object contractID",
         Url: "/contract"
     },
 
     {
-        Type: "instrumento de planejamento",
+        Type: "Instrumento de Planejamento",
         Name: "instrumento de planejamento planningInstrument multiyearPlan budgetGuidelinesLaw",
         Url: "/planningInstrument"
     },
 
     {
-        Type: "procedimento licitatório",
-        Name: "procedimento licitatório bidding managementUnitName managementUnitID bidID bidModality object publicationDate realizationDate bidderName identificationNumber bidderProposalAmount",
+        Type: "Procedimentos Licitatórios",
+        Name: "procedimento licitatório licitatorio bidding managementUnitName managementUnitID bidID bidModality object publicationDate realizationDate bidderName identificationNumber bidderProposalAmount",
         Url: "/bidding"
     },
 
     {
-        Type: "convênio",
-        Name: "convênio agreement agreementID grantorName contractorName celebrationDate publicationDate validityDate object agreementAmount counterpartAmount",
+        Type: "Convênios",
+        Name: "convênio convenio agreement agreementID grantorName contractorName celebrationDate publicationDate validityDate object agreementAmount counterpartAmount",
         Url: "/agreement"
     },
 
@@ -61,8 +61,8 @@ const proprietys = [
     },
 
     {
-        Type: "tutorial",
-        Name: "tutorial começar starting",
+        Type: "Como começar",
+        Name: "tutorial como começar starting",
         Url: "/tutorial"
     }
 ];
@@ -70,12 +70,9 @@ const proprietys = [
 
 const names = document.getElementById("search");
 
-const list = document.getElementById("result");
+const nav = document.getElementById("ol");
 
-const nav = document.getElementById("empty-text");
-
-const but = document.getElementById("button");
-
+total = nav.innerHTML;
 
 names.addEventListener("keyup", function(event) {
 
@@ -92,19 +89,15 @@ names.addEventListener("keyup", function(event) {
     });
         
     // Exibe no HTML a lista de filmes do resultado do filtro anterior:
-    list.innerHTML = "";
-    list.style.display = "none";
-    nav.style.display = "flex";
+
+    nav.innerHTML = ""
 
     for (let propriety of matchs) {
         if(names.value != "" && matchs.length > 0){
-            list.innerHTML += "<div class = 'search-bar' ><a href='"+propriety.Url+"'>"+propriety.Type+"</a></div>";
-            list.style.display = "inline-block";
-            nav.style.display = "none";
+            nav.innerHTML += "<li> <a class='nav-link' href = '"+propriety.Url+"'>"+propriety.Type+"</a> </li>";
         }
         else{
-            list.style.display = "none";
-            nav.style.display = "flex";
+            nav.innerHTML = total
         }
     }
 });
