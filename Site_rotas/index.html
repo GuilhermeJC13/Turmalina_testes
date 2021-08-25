@@ -27,19 +27,21 @@
     <title>Unipt.org</title>
 </head>
 <body>
-    <header>
+    <header> <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-light">
             <span class="navbar-toggler-icon" onclick="openSide()"></span>
             <a class="navbar-brand logo-image" href="/home"><img src="images\logo_tce_branco.png" alt="alternative" width="60">Unipt.org</a> 
             <ul class="navbar-nav ml-auto">
         </nav>
-        <a class="navbar-brand logo-image" href="/home"><img src="images\Turmalina_logo.png" alt="alternative" width="60"></a> 
-            <a class="navbar-brand logo-image" href="/home"><img src="images\TCE.jpg" alt="alternative" width="50"></a> 
-            <a class="navbar-brand logo-image" href="/home"><img src="images\ODS_logo.png" alt="alternative" width="50"></a> 
-    </header>
+        <a class="navbar-brand logo-image" href="/home"><img src="images\turmalina.png" alt="alternative" width="80"></a> 
+        <a class="navbar-brand logo-image" href="https://tce.pb.gov.br/"><img src="images\TCE.jpg" alt="alternative" width="50"></a> 
+        <a class="navbar-brand logo-image" href="https://odsbrasil.gov.br/"><img src="images\ODS_logo.png" alt="alternative" width="50"></a> 
+        <a class="navbar-brand logo-image" href="https://www.ufpb.br/"><img src="images\UFPB.png" alt="alternative" width="50"></a>
+        <a class="navbar-brand logo-image" href="https://aria.ci.ufpb.br/"><img src="images\ARIA.png" alt="alternative" width="50"></a>
+    </header> <!-- NAVBAR -->
 
     <main>
-        <aside class="sidebar">
+        <aside class="sidebar"> <!-- SIDE BAR -->
             <div class="component">
                 <div class="header">
                     <form class="navbar-form d-flex justify-content-center">
@@ -110,16 +112,16 @@
                     <ul class="items list"></ul>
                 </div>
             </div>
-        </aside>
-        <article class="components"> 
+        </aside> <!-- SIDE BAR -->
+        <article class="components"> <!-- CONTENT -->
             <div class="container">
                 <div ng-view>
                 </div>
             </div>
-        </article>
+        </article> <!-- CONTENT -->
     </main>
-
     <footer>
+         
     </footer>
 
     <script src="assets\scripts\bootstrap.js"></script>

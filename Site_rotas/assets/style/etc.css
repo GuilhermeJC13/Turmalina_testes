@@ -57,7 +57,7 @@ body {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    /**flex-wrap: wrap;**/
 }
 
 main {
@@ -244,3 +244,8 @@ article > * + * {
     font-size: clamp(0.5rem, 2vw, 1rem);
 }
   
+footer{
+    height: auto;
+    width: 100%;
+    background-color: whitesmoke;
+}

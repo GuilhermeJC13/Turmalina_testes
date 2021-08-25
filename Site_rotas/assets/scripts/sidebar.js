@@ -2,7 +2,8 @@ const navbar = document.getElementById("empty-text");
 
 var flag = true;
 
-function openSide(){
+// a function used for erasing the sidebar on small devices
+function openSide(){ 
     flag = !flag;
     if(flag){
         navbar.style.display = "flex";

@@ -1,3 +1,8 @@
+
+// type = Name shown
+// Name = Names that are used in search
+// URL = path
+
 const proprietys = [
     {
         Type: "Receita Orçamentária",
@@ -68,36 +73,36 @@ const proprietys = [
 ];
 
 
-const names = document.getElementById("search");
+const names = document.getElementById("search"); // take search text
 
-const nav = document.getElementById("ol");
+const nav = document.getElementById("ol"); // take sidebar
 
-total = nav.innerHTML;
+total = nav.innerHTML; // keep sidebar
 
 names.addEventListener("keyup", function(event) {
 
-    // Filtramos a lista de filmes com base no texto digitado:
+    // filter based on the text sent
     const matchs = proprietys.filter(value => {
 
         var n = names.value
 
         var x = value.Name
     
-        // Se o texto digitado for encontrado no título, retorna o registro:
+        // if the text was found, return it
         return x.toLowerCase().indexOf(n.toLowerCase()) !== -1;
     
     });
         
-    // Exibe no HTML a lista de filmes do resultado do filtro anterior:
+    // Add results into HTML
 
     nav.innerHTML = ""
 
     for (let propriety of matchs) {
         if(names.value != "" && matchs.length > 0){
-            nav.innerHTML += "<li> <a class='nav-link' href = '"+propriety.Url+"'>"+propriety.Type+"</a> </li>";
+            nav.innerHTML += "<li> <a class='nav-link' href = '"+propriety.Url+"'>"+propriety.Type+"</a> </li>"; // change sidebar with results if it exists
         }
         else{
-            nav.innerHTML = total
+            nav.innerHTML = total // give sidebar the original value
         }
     }
 });
