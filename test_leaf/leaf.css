@@ -1,0 +1,10 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#map {
+    width: 1280px;
+    height: 720px;
+    margin-left: 25%;
+}
