@@ -63,6 +63,39 @@ Vamos começar com um exemplo concreto. Imagine que tenhamos uma página que con
         </table>
     </div>
 ```
+
+```
+<div>
+    <caption>Descrição</caption>
+    <!-- Cabeçalho da tabela  -->
+    <div>
+        <div>Nome da unidade gestora</div>
+        <div>Código da unidade gestora</div>
+        <div>Número da licitação</div>
+        <div>Modalidade de licitação</div>
+        <div>Objeto da licitação</div>
+        <div>Data da publicação</div>
+        <div>Data de realização</div>
+        <div>Nome do Participante</div>
+        <div>CNPJ do paricipante</div>
+        <div>Valor da proposta</div>
+    </div>
+    <!-- Dados referentes a certa linha da tabela  -->
+    <div>
+        <div>Secretaria Municipal de Saúde</div>
+        <div>00000.000-0</div>
+        <div>10.017/2021</div>
+        <div>Pregão Eletrônico</div>
+        <div>SISTEMA DE REGISTRO DE PREÇOS PARA A AQUISIÇÃO DE MEDICAMENTOS DA REDE HOSPITALAR E ESPECIALIZADA</div>
+        <div>01/04/2021</div>
+        <div>01/03/2021</div>
+        <div>COMERCIAL VALFARMA LTDA</div>
+        <div>02.600.770/0001-09</div>
+        <div>R$ 3.535.816,11</div>
+    </div>
+</div>
+```
+
 ### itemscope e itemtype
 Primeiramente precisamos identificar a seção da página que contém a tabela com as informações sobre licitações. Para isso, adicionamos o elemento itemscope à tag HTML que inclui as informações sobre o item que desejamos:
 
@@ -101,6 +134,38 @@ Primeiramente precisamos identificar a seção da página que contém a tabela c
     </div>
 ```
 
+```
+<div itemscope>
+    <caption>Descrição</caption>
+    <!-- Cabeçalho da tabela  -->
+    <div>
+        <div>Nome da unidade gestora</div>
+        <div>Código da unidade gestora</div>
+        <div>Número da licitação</div>
+        <div>Modalidade de licitação</div>
+        <div>Objeto da licitação</div>
+        <div>Data da publicação</div>
+        <div>Data de realização</div>
+        <div>Nome do Participante</div>
+        <div>CNPJ do paricipante</div>
+        <div>Valor da proposta</div>
+    </div>
+    <!-- Dados referentes a certa linha da tabela  -->
+    <div>
+        <div>Secretaria Municipal de Saúde</div>
+        <div>00000.000-0</div>
+        <div>10.017/2021</div>
+        <div>Pregão Eletrônico</div>
+        <div>SISTEMA DE REGISTRO DE PREÇOS PARA A AQUISIÇÃO DE MEDICAMENTOS DA REDE HOSPITALAR E ESPECIALIZADA</div>
+        <div>01/04/2021</div>
+        <div>01/03/2021</div>
+        <div>COMERCIAL VALFARMA LTDA</div>
+        <div>02.600.770/0001-09</div>
+        <div>R$ 3.535.816,11</div>
+    </div>
+</div>
+```
+
 Ao adicionarmos o itemscope estamos especificando que o HTML contém um bloco <div> sobre um determinado item. Entretanto, não é suficiente especificar que existe um item no HTML sem especificar qual tipo de item é esse. Para tanto, podemos especificar o tipo do item utilizando o atributo itemtype imediatamente após o itemscope.
 ```
 <div itemscope itemtype="Unipt.org/Bid">
@@ -135,6 +200,38 @@ Ao adicionarmos o itemscope estamos especificando que o HTML contém um bloco <d
         </table>
     </div>
 ```
+```
+<div itemscope itemtype="Unipt.org/Bid">
+    <caption>Descrição</caption>
+    <!-- Cabeçalho da tabela  -->
+    <div>
+        <div>Nome da unidade gestora</div>
+        <div>Código da unidade gestora</div>
+        <div>Número da licitação</div>
+        <div>Modalidade de licitação</div>
+        <div>Objeto da licitação</div>
+        <div>Data da publicação</div>
+        <div>Data de realização</div>
+        <div>Nome do Participante</div>
+        <div>CNPJ do paricipante</div>
+        <div>Valor da proposta</div>
+    </div>
+    <!-- Dados referentes a certa linha da tabela  -->
+    <div>
+        <div>Secretaria Municipal de Saúde</div>
+        <div>00000.000-0</div>
+        <div>10.017/2021</div>
+        <div>Pregão Eletrônico</div>
+        <div>SISTEMA DE REGISTRO DE PREÇOS PARA A AQUISIÇÃO DE MEDICAMENTOS DA REDE HOSPITALAR E ESPECIALIZADA</div>
+        <div>01/04/2021</div>
+        <div>01/03/2021</div>
+        <div>COMERCIAL VALFARMA LTDA</div>
+        <div>02.600.770/0001-09</div>
+        <div>R$ 3.535.816,11</div>
+    </div>
+</div>
+```
+
 Ao utilizarmos o itemtype estamos especificando que o item contido na <div> é sobre Licitações, como definido na documentação de tipos do Unipt. Como visto, os tipos dos itens são informados como URLs, neste caso https://Unipt.org/Bid.
 ### itemprop
 Além de indicarmos o item no HTML com o itemscope e especificarmos sobre o que é o item com o itemtype, podemos indicar mais informações sobre esse item. No microdata chamamos essas informações adicionais sobre um item de propriedades. Para rotular as propriedades de um item utilizamos o atributo itemprop. Por exemplo, para identificar a modalidade da Licitação no HTML, adicionamos itemprop=”bidModality” ao elemento que envolve o nome da modalidade de licitação.
@@ -173,6 +270,40 @@ Observação: Neste link há uma lista completa de todas as propriedades que pod
             </tr>
         </table>
     </div>
+```
+
+```
+<div itemscope itemtype="Unipt.org/Bid">
+    <div>
+        <caption>Descrição</caption>
+        <!-- Cabeçalho da tabela  -->
+        <div>
+            <div itemprop="managementUnitName">Nome da unidade gestora</div>
+            <div itemprop="managementUnitID">Código da unidade gestora</div>
+            <div itemprop="bidID">Número da licitação</div>
+            <div itemprop="bidModality">Modalidade de licitação</div>
+            <div itemprop="object">Objeto da licitação</div>
+            <div itemprop="publicationDate">Data da publicação</div>
+            <div itemprop="realizationDate">Data de realização</div>
+            <div itemprop="bidderName">Nome do Participante</div>
+            <div itemprop="identificationNumber">CNPJ do paricipante</div>
+            <div itemprop="bidderProposalAmount">Valor da proposta</div>
+        </div>
+        <!-- Dados referentes a certa linha da tabela  -->
+        <div>
+            <div itemprop="managementUnitName">Secretaria Municipal de Saúde</div>
+            <div itemprop="managementUnitID">00000.000-0</div>
+            <div itemprop="bidID">10.017/2021</div>
+            <div itemprop="bidModality">Pregão Eletrônico</div>
+            <div itemprop="object">SISTEMA DE REGISTRO DE PREÇOS PARA A AQUISIÇÃO DE MEDICAMENTOS DA REDE HOSPITALAR E ESPECIALIZADA</div>
+            <div itemprop="publicationDate">01/04/2021</div>
+            <div itemprop="realizationDate">01/03/2021</div>
+            <div itemprop="bidderName">COMERCIAL VALFARMA LTDA</div>
+            <div itemprop="identificationNumber">02.600.770/0001-09</div>
+            <div itemprop="bidderProposalAmount">R$ 3.535.816,11</div>
+        </div>
+    </div>
+</div>
 ```
 
 ## Unipt: tipos e propriedades
