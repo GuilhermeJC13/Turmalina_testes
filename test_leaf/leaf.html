@@ -5,30 +5,101 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
         <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico">
-
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
-
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-
         <link rel="stylesheet" href="leaf.css"> 
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <!-- <link href="etc.css" rel="stylesheet"> -->
 
     </head>
 
-    <body data-new-gr-c-s-check-loaded="14.1027.0">
+    <body>
+        <header>
+            <img src = "\images\logo_tce_branco.png">Turmalina
+        </header>
 
-        <nav></nav>
+        <div class="wrapper">   
 
-        <div class = "border">
-            <div id="map"></div>
+            <div class="sidebar">
+                <div class="header">
+                    <form class="navbar-form d-flex justify-content-center">
+                        <input class="navbar-input" id="search" autocomplete="off" type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <div class="btn btn-outline-dark" id = "button" type="submit" ><img src="images\lupa.png" alt="alternative" width="15" height="15" ></div>
+                    </form>
+                    <ul class = "result" id="result"></ul>
+                </div>
+                <div class="content" id="scroll">
+                    <div id = "empty-text" class="empty-text">
+                        <ol id = "ol">
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                            <li>
+                                teste
+                            </li>
+                        </ol>
+                    </div>
+                    <ul class="items list"></ul>
+                </div>
+            </div>
+
+            <div class="main">
+                <div id="map"></div>
+            </div> 
         </div>
 
+        
+        <div id="b278475261116473d3eb98f88982d177"></div>
         <script type="text/javascript" src="us-states.js"></script>
         <script type="text/javascript" src = "leaf.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
 
-        <div id="b278475261116473d3eb98f88982d177"></div>
-        
     </body>
 
     <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>

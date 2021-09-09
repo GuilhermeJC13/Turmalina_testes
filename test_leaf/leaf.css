@@ -1,30 +1,35 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: aliceblue;
+
+header{
+    background-color: black;
+    color: white;
 }
 
-nav{
-    background-color: rgb(27, 27, 27);
-    width: 100%;
-    height: 50px;
+.wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
+.sidebar{
+    width: 25%;
+    overflow: auto;
+    position: sticky;
+    background-color: #f6f6f6;;
+}
 
+.main {
+    width: 75%;
+    flex-direction: column;
+}
 
 #map {
-    top: -50px;
-    width: 600px;
-    height:400px;
-    margin: 200px auto;
-    border: 11px solid var(--color-primary);
-    border-radius: 3px;
+    height: 1000px;
+    border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.04),
       0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
       0 16px 32px rgba(0, 0, 0, 0.02), 0 32px 64px rgba(0, 0, 0, 0.02);
 }
 
-.info { 
+.info {
     padding: 6px 8px; 
     font: 14px/16px Arial, Helvetica, sans-serif; 
     background: white; 
@@ -36,4 +41,60 @@ nav{
 .info h4 { 
     margin: 0 0 5px; 
     color: #777; 
+}
+
+
+.empty-text {
+    padding: var(--space);
+    text-align: center;
+    color: var(--color-mid);
+    
+}
+
+.empty-text ol {
+    list-style-type: none;
+    counter-reset: item;
+    margin: 0;
+    padding: 0!important;
+}
+  
+.empty-text ol > li {
+    display: table;
+    counter-increment: item;
+    margin-bottom: 0.6em;
+}
+
+.empty-text li > a{
+    color: rgb(31, 24, 24);
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.empty-text li > a:hover{
+    color: var(--color-dark-red);
+}
+
+.empty-text ol > li:before {
+    content: counters(item, ".") ". ";
+    display: table-cell;
+    padding-right: 0.6em;
+}
+  
+.empty-text li ol > li {
+    margin: 0;
+}
+  
+.empty-text li ol > li:before {
+    content: counters(item, ".") " ";
+}
+
+.component .header,
+.component .footer {
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+.component .header {
+    border-bottom: inherit;
 }

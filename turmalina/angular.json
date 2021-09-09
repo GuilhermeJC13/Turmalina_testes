@@ -101,7 +101,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": ["turmalina/node_modules/leaflet/src/Leaflet.js", "turmalina/src/assets/scripts/us-states.js"]
           }
         }
       }
